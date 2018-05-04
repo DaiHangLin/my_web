@@ -1,8 +1,8 @@
 # webpack学习
 ## 2018-05-04
-学习链接[http://www.css88.com/doc/webpack/concepts/](http://www.css88.com/doc/webpack/concepts/)
+学习链接[https://webpack.js.org/guides/output-management/#preparation)
 
-### [资源整合](http://www.css88.com/doc/webpack/guides/asset-management/)
+### [资源整合](https://webpack.js.org/guides/output-management/#preparation)
 
 整合css
 -
@@ -34,4 +34,4 @@
           }
         };
         
-+ 详细参考[http://www.css88.com/doc/webpack/guides/asset-management/](http://www.css88.com/doc/webpack/guides/asset-management/)
++ 详细参考[https://webpack.js.org/guides/output-management/#preparation](https://webpack.js.org/guides/output-management/#preparation)
