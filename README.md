@@ -16,7 +16,7 @@
 - 安装完成后 ./node_modules/.bin/webpack进行打包
 
 
-hello webpack
+hello webpack  
 -
 + 目录结构
 
