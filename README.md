@@ -1,37 +1,25 @@
 # webpack学习
 ## 2018-05-04
-学习链接[https://webpack.js.org/guides/output-management/#preparation)
+学习链接[http://www.css88.com/doc/webpack/concepts/](http://www.css88.com/doc/webpack/concepts/)
 
-### [资源整合](https://webpack.js.org/guides/output-management/#preparation)
+基本概念
+-
+   - 入口
+   - 出口
+   - loader
+   - plugins
 
-整合css
+安装
+-
+- npm install --save-dev webpack 最新版本
+- npm install --save-dev webpack@<version>  特地版本
+- 安装完成后 ./node_modules/.bin/webpack进行打包
+
+不同的branch测试demo
 -
 
-+ 需要在 module 配置中 安装并添加 style-loader 和 css-loader
++ [hello webpack README.md](https://github.com/DaiHangLin/my_web/blob/hello-webpack/README.md)
 
-        npm install --save-dev style-loader css-loader
++ [npm run build README.md](https://github.com/DaiHangLin/my_web/blob/npm/README.md)
 
-+ 修改webpack.config.js
-
-        const path = require('path');
-        
-        module.exports = {
-          entry: './src/index.js',
-          output: {
-            path: path.resolve(__dirname, 'dist'),
-            filename: 'bundle.js'
-          },
-          module: {
-            rules: [
-              {
-                test: /\.css$/,
-                use: [
-                  'style-loader',
-                  'css-loader'
-                ]
-              }
-            ]
-          }
-        };
-        
-+ 详细参考[https://webpack.js.org/guides/output-management/#preparation](https://webpack.js.org/guides/output-management/#preparation)
++ [asset manage README.md](https://github.com/DaiHangLin/my_web/blob/asset-manage/README.md)
