@@ -15,7 +15,10 @@
 - npm install --save-dev webpack@<version>  特地版本
 - 安装完成后 ./node_modules/.bin/webpack进行打包
 
+不同的branch测试demo
+-
 
-[hello webpack README.md](https://github.com/DaiHangLin/my_web/blob/hello-webpack/README.md)
++ [hello webpack README.md](https://github.com/DaiHangLin/my_web/blob/hello-webpack/README.md)
 
++ [npm run build README.md](https://github.com/DaiHangLin/my_web/blob/npm/README.md)
 
