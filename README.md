@@ -62,3 +62,34 @@
     ` "start": "webpack-dev-server --open"` 
 
 + 最后通过 `npm start`启动web服务器
+
+
+## 2018-05-19
+
+### [配置打包生成开发环境和生产环境-参考官方文档](https://webpack.js.org/guides/production/)
+
++ 开发环境 development
+    + 需要source map能够在出错时准确定位到代码位置
++ 生产环境 production
+    + 需要更轻量的代码结构
+
+### 首先我们需要借助 webpack-merge的工具
+
++ 下载安装webpack-merge
+
+        npm install --save-dev webpack-merge
+        
++ 调整project的配置
++ 修改npm script
++ 官方也是建议在prod上开启源码映射
+    + 但是需要注意的是Avoid inline-*** and eval-*** use in production as they can increase bundle size and reduce the overall performance
+    + 翻译后不要使用inline-*** 或者 eval-***的源码映射选项，因为会增大budle体积,降低performance
+
++ DefinePlugin 可以帮助我们设置node 的***环节变量***
+        
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV':JSON.stringify('production')
+        })
+        
+
+

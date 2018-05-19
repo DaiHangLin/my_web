@@ -4,6 +4,12 @@ import './style.css';
 import Guide from './guide.png';
 import Data from './data.xml';
 
+if (process.env.NODE_ENV === 'development') {
+  console.log('Looks like we are in development mode!');
+}else {
+  console.log('Looks like we are in development mode-----!');
+}
+
 function component() {
  var element = document.createElement('div');
  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
